@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "outDir": "./build",
+    "baseUrl": "src",
+    "rootDir": "./",
+    "jsx": "react-jsx",
+    "paths": {
+      //"@/Components/*": ["./components/*"],
+    }
+  },
+  "include": [
+    "./**/*", // All non-hidden files at any directory level
+    "./**/.*", // Hidden dotfiles like .eslintrc.js at any level
+    "./**/.*.[tj]s?(x)" // All hidden TS/JS dotfiles
+  ],
+  "exclude": [
+    "build",
+    "node_modules",
+    ".babelrc.js",
+    ".eslintrc.json",
+    ".prettierrc.json",
+    "metro.config.js",
+    "jest.config.js",
+    "jest-setup.js",
+  ]
+}
