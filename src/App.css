@@ -27,7 +27,6 @@
   --generic-space-components: 12px;
 }
 
-
 .Header {
   background-color: var(--color-lg-background);
   border-bottom: 4px solid var(--color-lg-circle);
@@ -152,8 +151,7 @@
 }
 
 @media (min-width:320px)  { 
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */  
     .Footer {
       padding: 0px 10px 200px 10px;
     }
