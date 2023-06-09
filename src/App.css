@@ -150,6 +150,17 @@
   width: 100%;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .Body {
+        height: calc(100vh -11em - var(--header-height));
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1080) {
+    .Body {
+        height: calc(100vh -11em - var(--header-height));
+    }
+}
 
 .Sidebar {
   background-color: #D2B48C;
