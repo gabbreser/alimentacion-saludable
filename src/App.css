@@ -149,16 +149,15 @@
   display: flex;
   width: 100%;
 }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-width : 560px) {
     .Footer {
       padding: 0px 10px 11rem 10px;
     }
 }
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 1080) {
-    .Footer {
-      padding: 0px 10px 11rem 10px;
+@media only screen and (max-width : 560px) {
+    .Body {
+        height: calc(100vh -11em - var(--header-height));
     }
 }
 
