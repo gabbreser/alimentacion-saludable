@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alimentacion-saludable/static/css/main.6c5c3bc8.css",
-    "main.js": "/alimentacion-saludable/static/js/main.6268bb1e.js",
+    "main.css": "/alimentacion-saludable/static/css/main.57f0631b.css",
+    "main.js": "/alimentacion-saludable/static/js/main.4239fa62.js",
     "static/js/787.1bee87ea.chunk.js": "/alimentacion-saludable/static/js/787.1bee87ea.chunk.js",
     "static/media/Livvic-Black.ttf": "/alimentacion-saludable/static/media/Livvic-Black.6c555e614d22e53fecb8.ttf",
     "static/media/Livvic-Bold.ttf": "/alimentacion-saludable/static/media/Livvic-Bold.a7c0f958bcbebef1c7aa.ttf",
@@ -9,12 +9,12 @@
     "static/media/Livvic-Regular.ttf": "/alimentacion-saludable/static/media/Livvic-Regular.56afaa4ec2f0b861776c.ttf",
     "static/media/Livvic-Medium.ttf": "/alimentacion-saludable/static/media/Livvic-Medium.da86a3ec69f13816851d.ttf",
     "index.html": "/alimentacion-saludable/index.html",
-    "main.6c5c3bc8.css.map": "/alimentacion-saludable/static/css/main.6c5c3bc8.css.map",
-    "main.6268bb1e.js.map": "/alimentacion-saludable/static/js/main.6268bb1e.js.map",
+    "main.57f0631b.css.map": "/alimentacion-saludable/static/css/main.57f0631b.css.map",
+    "main.4239fa62.js.map": "/alimentacion-saludable/static/js/main.4239fa62.js.map",
     "787.1bee87ea.chunk.js.map": "/alimentacion-saludable/static/js/787.1bee87ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c5c3bc8.css",
-    "static/js/main.6268bb1e.js"
+    "static/css/main.57f0631b.css",
+    "static/js/main.4239fa62.js"
   ]
 }
