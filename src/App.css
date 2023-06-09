@@ -151,13 +151,13 @@
 }
 @media only screen and (max-width : 560px) {
     .Footer {
-      padding: 0px 10px 11rem 10px;
+      padding: 0px 10px 200px 10px;
     }
 }
 
 @media only screen and (max-width : 560px) {
     .Body {
-        height: calc(100vh -11em - var(--header-height));
+        height: calc(100vh -200px - var(--header-height));
     }
 }
 
