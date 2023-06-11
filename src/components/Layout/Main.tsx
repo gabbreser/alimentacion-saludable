@@ -1,7 +1,7 @@
 import { Pages } from "configuration/constants";
 import React, { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
-import { platform } from "styles";
+import { NavLink, BrowserRouter, Link } from "react-router-dom";
+import { platform, textstyles } from "styles";
 
 interface MainProps {
   children?: React.ReactNode;
@@ -9,6 +9,10 @@ interface MainProps {
 
 const Main = ({ children }: MainProps): JSX.Element => {
   const [expanded, setExpanded] = useState(false);
+
+  const handleLink = (navData: { isActive: boolean }) => {
+    return navData.isActive ? "active" : "";
+  };
 
   const handleClick = () => {
     setExpanded(!expanded);
@@ -44,31 +48,29 @@ const Main = ({ children }: MainProps): JSX.Element => {
       </div>
       <div className="Body">
         <div className={`Sidebar ${expanded ? "open" : ""}`}>
-          <a href="#home">
+          <NavLink to={Pages.HOMEPAGE} className={handleLink}>
             <span>Inicio</span>
-          </a>
-          <a className="active" href="#news">
+          </NavLink>
+          <NavLink to={Pages.ORDERSLISTPAGE} className={handleLink}>
+            <span>Pedidos</span>
+          </NavLink>
+          <NavLink to={Pages.RECIPESLISTPAGE} className={handleLink}>
             <span>Recetas</span>
-          </a>
-          <a href="#contact">
-            <span>Contact</span>
-          </a>
-          <a href="#about">
-            <span>About</span>
-          </a>
+          </NavLink>
+          <NavLink to={Pages.CONTACTPAGE} className={handleLink}>
+            <span>Contacto</span>
+          </NavLink>
         </div>
         <div className="Main">
           {children}
           <div className="Footer">
-            <div style={{ alignItems: "center" }}>
-              Seguinos{" "}
+            <div className="Footer-Social">
+              <span style={{ marginRight: "10px" }}>Seguinos</span>
               <a
                 href="https://instagram.com/gabbreser?igshid=MzRlODBiNWFlZA=="
                 target="_blank"
                 aria-label="instagram"
-                style={{
-                  display: "inline-block",
-                }}
+                className="btn-social"
                 rel="noreferrer">
                 <svg
                   className="svg-inline--fa"
@@ -79,8 +81,8 @@ const Main = ({ children }: MainProps): JSX.Element => {
               </a>
             </div>
             <h4>
-              Copyright © {new Date().getFullYear()}. Todos los derechos
-              reservados.
+              Gabbreser - Todos los derechos reservados{" "}
+              {new Date().getFullYear()} ©
             </h4>
           </div>
         </div>

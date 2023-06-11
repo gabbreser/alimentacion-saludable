@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
 import { Main } from "components/Layout";
+import { RootRouter } from "routers";
 
 const App = () => {
   return (
     <Main>
-      <div style={{ flex: 1 }}>aaa</div>
+      <div style={{ flex: 1 }}>
+        <RootRouter />
+      </div>
       {/**
        <a
         href="https://wa.me/5491111111111"

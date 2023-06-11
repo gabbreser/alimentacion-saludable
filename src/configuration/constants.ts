@@ -1,8 +1,9 @@
 /** Rutas de navegacion de la App */
 enum Pages {
-  LOGINPAGE = "/Login",
-  LOGINCALLBACK = "/oauth/google",
   HOMEPAGE = "/",
+  CONTACTPAGE = "/Contacto",
+  RECIPESLISTPAGE = "/Recetas",
+  ORDERSLISTPAGE = "/Pedidos",
 }
 
 const calendarSettings = {
