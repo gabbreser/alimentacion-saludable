@@ -1,6 +1,6 @@
 import { Pages } from "configuration/constants";
 import React, { useState } from "react";
-import { NavLink, BrowserRouter, Link } from "react-router-dom";
+import { NavLink, BrowserRouter, Link, useNavigate } from "react-router-dom";
 import { platform, textstyles } from "styles";
 
 interface MainProps {
@@ -21,7 +21,11 @@ const Main = ({ children }: MainProps): JSX.Element => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL || Pages.HOMEPAGE}>
       <div className="Header">
-        <img />
+        <a
+          style={{ display: "flex" }}
+          href={process.env.PUBLIC_URL || Pages.HOMEPAGE}>
+          <img />
+        </a>
         <div
           style={{
             width: "50px",

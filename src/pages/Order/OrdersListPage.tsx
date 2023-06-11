@@ -1,6 +1,5 @@
 import React from "react";
 import orders from "configuration/orders";
-import { OrderProps } from "interfaces/order";
 
 const OrdersListPage = (): JSX.Element => {
   return (
@@ -10,7 +9,7 @@ const OrdersListPage = (): JSX.Element => {
         flexDirection: "column",
         alignItems: "center",
       }}>
-      <h1>Hacenos tus pedido!</h1>
+      <h1>Hacenos tus pedidos!</h1>
       {orders.map((item, index) => (
         <div className="order-card" key={`${index}${item.title}`}>
           <img src={item.source} />
