@@ -286,6 +286,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .order-body {
+    margin-top: var(--generic-space-components);
+  }
 }
 h1, h2, h3, h4, h5, p {
   color: var(--color-lg-text);
@@ -360,14 +363,14 @@ h1, h2, h3, h4, h5, p {
 .order-card img {
   border: 3px solid var(--color-lg-circle);
   border-radius: 10px;
-  width: 300px;
+  width: 280px;
   height: fit-content;
 }
 .order-body {
   padding-inline: var(--generic-space-components);
 }
 .order-header {
-  color: var(--color-lg-text);
+  color: var(--color-lg-circle);
   font-weight: bold;
   font-size: var(--font-size-TITLE);
 }
