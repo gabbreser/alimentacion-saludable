@@ -1,4 +1,9 @@
 import { Pages } from "configuration/constants";
+import {
+  genericMessages,
+  homeMessages,
+  orderMessages,
+} from "configuration/messages";
 import React, { useState } from "react";
 import { NavLink, BrowserRouter, Link, useNavigate } from "react-router-dom";
 import { platform, textstyles } from "styles";
@@ -53,10 +58,10 @@ const Main = ({ children }: MainProps): JSX.Element => {
       <div className="Body">
         <div className={`Sidebar ${expanded ? "open" : ""}`}>
           <NavLink to={Pages.HOMEPAGE} className={handleLink}>
-            <span>Inicio</span>
+            <span>{homeMessages.access}</span>
           </NavLink>
           <NavLink to={Pages.ORDERSLISTPAGE} className={handleLink}>
-            <span>Pedidos</span>
+            <span>{orderMessages.access}</span>
           </NavLink>
           <NavLink to={Pages.RECIPESLISTPAGE} className={handleLink}>
             <span>Recetas</span>
@@ -73,7 +78,8 @@ const Main = ({ children }: MainProps): JSX.Element => {
               <a
                 href="https://instagram.com/gabbreser?igshid=MzRlODBiNWFlZA=="
                 target="_blank"
-                aria-label="instagram"
+                title="Instagram"
+                aria-label="Instagram"
                 className="btn-social"
                 rel="noreferrer">
                 <svg
@@ -84,10 +90,7 @@ const Main = ({ children }: MainProps): JSX.Element => {
                 </svg>
               </a>
             </div>
-            <h4>
-              Gabbreser - Todos los derechos reservados{" "}
-              {new Date().getFullYear()} ©
-            </h4>
+            <h4>{genericMessages.copyRight}</h4>
           </div>
         </div>
       </div>

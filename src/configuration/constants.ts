@@ -6,6 +6,11 @@ enum Pages {
   ORDERSLISTPAGE = "/Pedidos",
 }
 
+const contactData = {
+  whatsapp: (text: string) => `https://wa.me/+5491161542448?text=${text}`,
+  instagram: "https://ig.me/m/gabbreser",
+};
+
 const calendarSettings = {
   // Calendar
   current: "Fecha",
@@ -34,4 +39,4 @@ const calendarSettings = {
     milliseconds: "ms",
   },
 };
-export { Pages, calendarSettings };
+export { Pages, contactData, calendarSettings };
