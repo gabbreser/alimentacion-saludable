@@ -7,13 +7,13 @@ import { contactData } from "configuration/constants";
 const App = () => {
   return (
     <Main>
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1, display: "flex" }}>
         <RootRouter />
       </div>
       {/** */}
       <a
         href={contactData.whatsapp(
-          "Hola me gustaria hacer el siguiente pedido ",
+          "Hola me gustaria hacer el siguiente pedido: ",
         )}
         target="_blank"
         className="btn-whatsapp"

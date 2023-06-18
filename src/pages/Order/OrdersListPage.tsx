@@ -16,6 +16,7 @@ const OrdersListPage = (): JSX.Element => {
     <div
       style={{
         display: "flex",
+        flex: 1,
         flexDirection: "column",
         alignItems: "center",
       }}>
