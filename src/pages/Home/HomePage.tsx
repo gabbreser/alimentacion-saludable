@@ -12,7 +12,8 @@ const HomePage = (): JSX.Element => {
   return (
     <ViewForm
       style={{
-        marginInline: "var(--generic-space-components)",
+        backgroundColor: "antiquewhite",
+        marginInline: "0px",
         textAlignLast: "center",
       }}>
       <h1>{homeMessages.title}</h1>
