@@ -22,7 +22,8 @@ const genericMessages = {
   update: "Actualizar",
   refresh: "Actualizar",
   reset: "Reiniciar",
-  copyRight: `${new Date().getFullYear()} © Todos los derechos Reservados | Gabbreser`,
+  copyRight: `Copyright © ${new Date().getFullYear()} Gabbreser. Todos los derechos reservados`,
+  poweredBy: `Powered by`,
   list: {
     empty: "No contiene elementos",
     duplicated: (key: string, value: string) =>

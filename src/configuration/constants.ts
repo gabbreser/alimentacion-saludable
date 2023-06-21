@@ -11,6 +11,11 @@ const contactData = {
   instagram: "https://ig.me/m/gabbreser",
 };
 
+const designerData = {
+  image: "https://lighuendevelopments.netlify.app/mstile.svg",
+  link: "https://lighuendevelopments.netlify.app/",
+};
+
 const calendarSettings = {
   // Calendar
   current: "Fecha",
@@ -39,4 +44,4 @@ const calendarSettings = {
     milliseconds: "ms",
   },
 };
-export { Pages, contactData, calendarSettings };
+export { Pages, contactData, calendarSettings, designerData };
