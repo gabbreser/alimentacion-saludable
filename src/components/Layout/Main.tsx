@@ -1,4 +1,4 @@
-import { Pages } from "configuration/constants";
+import { Pages, designerData } from "configuration/constants";
 import {
   genericMessages,
   homeMessages,
@@ -17,6 +17,10 @@ const Main = ({ children }: MainProps): JSX.Element => {
 
   const handleLink = (navData: { isActive: boolean }) => {
     return navData.isActive ? "active" : "";
+  };
+
+  const handleNavigate = (url: string) => {
+    window.location.href = url;
   };
 
   const handleClick = () => {
@@ -91,6 +95,12 @@ const Main = ({ children }: MainProps): JSX.Element => {
               </a>
             </div>
             <h4>{genericMessages.copyRight}</h4>
+            <div
+              className="Footer-Designer"
+              onClick={() => handleNavigate(designerData.link)}>
+              {genericMessages.poweredBy}
+              <img src={designerData.image} />
+            </div>
           </div>
         </div>
       </div>
