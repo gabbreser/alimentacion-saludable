@@ -46,7 +46,7 @@ const orderMessages = {
   title: "Hacenos tus pedidos!",
   access: "Pedidos",
   legend:
-    "Recibimos los pedidos con 24 hs de anticipación para poder prepararlos exclusivamente para vos.",
+    "Recibimos los pedidos con 24 hs de anticipación para prepararlos exclusivamente para vos.",
 };
 
 export { genericMessages, homeMessages, orderMessages };
