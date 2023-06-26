@@ -35,20 +35,7 @@ const Main = ({ children }: MainProps): JSX.Element => {
           href={process.env.PUBLIC_URL || Pages.HOMEPAGE}>
           <img />
         </a>
-        <div
-          style={{
-            width: "50px",
-            height: "44px",
-            marginRight: "8px",
-            cursor: "pointer",
-            border: "1px solid rgba(255,255,255,0.3)",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            paddingTop: "3px",
-            boxShadow: "0 2px 10px 0 rgba(0,0,0,0.3)",
-          }}
-          onClick={handleClick}>
+        <div className="Header-Icon-Sidebar" onClick={handleClick}>
           <div className={`Header-Icon ${expanded ? "open" : ""}`}>
             <span></span>
             <span></span>
@@ -95,11 +82,11 @@ const Main = ({ children }: MainProps): JSX.Element => {
               </a>
             </div>
             <h4>{genericMessages.copyRight}</h4>
-            <div
-              className="Footer-Designer"
-              onClick={() => handleNavigate(designerData.link)}>
-              {genericMessages.poweredBy}
-              <img src={designerData.image} />
+            <div className="Footer-Designer">
+              <a onClick={() => handleNavigate(designerData.link)}>
+                {genericMessages.poweredBy}
+                <img src={designerData.image} />
+              </a>
             </div>
           </div>
         </div>

@@ -1,40 +1,39 @@
 @font-face {
- font-family: "Livvic";
- src: local("Livvic"),
-  url("./fonts/Livvic/Livvic-Regular.ttf") format("truetype");
- font-weight: normal;
+  font-family: "Livvic";
+  src: local("Livvic"),
+    url("./fonts/Livvic/Livvic-Regular.ttf") format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
- font-family: "Livvic";
- src: local("Livvic"),
-  url("./fonts/Livvic/Livvic-Medium.ttf") format("truetype");
- font-weight:500;
+  font-family: "Livvic";
+  src: local("Livvic"),
+    url("./fonts/Livvic/Livvic-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
- font-family: "Livvic";
- src: local("Livvic"),
-  url("./fonts/Livvic/Livvic-Bold.ttf") format("truetype");
- font-weight:bold;
+  font-family: "Livvic";
+  src: local("Livvic"), url("./fonts/Livvic/Livvic-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
 @font-face {
- font-family: "Livvic";
- src: local("Livvic"),
-  url("./fonts/Livvic/Livvic-Black.ttf") format("truetype");
- font-weight:900;
+  font-family: "Livvic";
+  src: local("Livvic"),
+    url("./fonts/Livvic/Livvic-Black.ttf") format("truetype");
+  font-weight: 900;
 }
 
 body {
   margin: 0;
-  font-family: 'Livvic';
+  font-family: "Livvic";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
