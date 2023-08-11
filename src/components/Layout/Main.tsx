@@ -5,8 +5,7 @@ import {
   orderMessages,
 } from "configuration/messages";
 import React, { useState } from "react";
-import { NavLink, BrowserRouter, Link, useNavigate } from "react-router-dom";
-import { platform, textstyles } from "styles";
+import { NavLink, BrowserRouter } from "react-router-dom";
 
 interface MainProps {
   children?: React.ReactNode;

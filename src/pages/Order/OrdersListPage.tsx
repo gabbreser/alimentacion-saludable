@@ -1,18 +1,11 @@
-import React, { CSSProperties } from "react";
+import React from "react";
 import { weeklyDishies } from "configuration/orders";
-import { ButtonReactive } from "components/Button";
-import { useNavigate } from "react-router-dom";
 import { orderMessages } from "configuration/messages";
 import { textstyles } from "styles";
 import { contactData } from "configuration/constants";
 
 const OrdersListPage = (): JSX.Element => {
-  /** Navegacion */
-  const redirectTo = (url: string) => {
-    window.location.href = url;
-  };
-
-  const letterStyle: CSSProperties = {
+  const letterStyle: React.CSSProperties = {
     letterSpacing: "3px",
     textTransform: "uppercase",
     fontWeight: "600",
