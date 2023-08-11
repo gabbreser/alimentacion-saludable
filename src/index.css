@@ -25,6 +25,8 @@
   font-weight: 900;
 }
 
+html,
+code,
 body {
   margin: 0;
   font-family: "Livvic";
@@ -33,7 +35,9 @@ body {
   overflow: hidden;
 }
 
+/*
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+*/
