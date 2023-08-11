@@ -1,6 +1,5 @@
+import React from "react";
 import { ImageProps } from "interfaces/buttons";
-import React, { useEffect, useRef, useState } from "react";
-import { buttonStyles, platform, textstyles } from "styles";
 
 type Props = {
   containerStyle: React.CSSProperties;
@@ -27,17 +26,6 @@ type Props = {
  * @param {string} testID
  */
 const ButtonHighlight = (props: Partial<Props>) => {
-  const {
-    content,
-    subtitle,
-    icon,
-    inverse,
-    disabled,
-    color,
-    containerStyle,
-    testID,
-    onPress,
-  } = props;
   return (
     <a>
       <span>aa</span>
