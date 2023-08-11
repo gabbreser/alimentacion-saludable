@@ -43,7 +43,7 @@ const homeMessages = {
 };
 
 const orderMessages = {
-  title: "Hacenos tus pedidos!",
+  title: "Platos Semanales",
   access: "Pedidos",
   legend:
     "Recibimos los pedidos con 24 hs de anticipación para prepararlos exclusivamente para vos.",

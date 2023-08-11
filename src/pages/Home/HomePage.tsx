@@ -12,7 +12,6 @@ const HomePage = (): JSX.Element => {
   return (
     <ViewForm
       style={{
-        backgroundColor: "antiquewhite",
         marginInline: "0px",
         textAlignLast: "center",
       }}>

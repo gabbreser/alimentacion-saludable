@@ -48,6 +48,9 @@
   --color-primary: #00baa4;
   --color-sidebar: #008b6e;
   --color-text: #5f6368;
+  --color-title: #a15a30;
+  --color-text-bg: #e4c292;
+  --color-title-bg: "rgba(254, 254, 244)";
   --color-white: #fff;
   --color-placeholder: #9197ae;
   --color-border-container: #e7e7ef;
@@ -288,6 +291,7 @@ a {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  background-color: var(--color-title-bg);
 }
 .Body {
   height: calc(100vh - var(--header-height));
