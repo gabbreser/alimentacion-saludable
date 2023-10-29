@@ -56,9 +56,6 @@ const Main = ({ children }: MainProps): JSX.Element => {
           <NavLink to={Pages.RECIPESLISTPAGE} className={handleLink}>
             <span>Recetas</span>
           </NavLink>
-          <NavLink to={Pages.CONTACTPAGE} className={handleLink}>
-            <span>Contacto</span>
-          </NavLink>
         </div>
         <div className="Main">
           {children}

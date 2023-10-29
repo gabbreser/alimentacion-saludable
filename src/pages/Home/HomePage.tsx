@@ -14,6 +14,7 @@ const HomePage = (): JSX.Element => {
       style={{
         marginInline: "0px",
         textAlignLast: "center",
+        alignItems: "flex-start",
       }}>
       <h1>{homeMessages.title}</h1>
       <p style={textstyles.textDescription}>{homeMessages.legend}</p>
